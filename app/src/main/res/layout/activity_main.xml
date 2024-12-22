@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Battery Percentage -->
+
+    <!-- Battery Health -->
+
+
+    <TextView
+        android:id="@+id/batteryPercentage"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Battery: 100%"
+        android:textStyle="italic"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/batteryHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health: Good"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Battery Status -->
+    <TextView
+        android:id="@+id/batteryStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Discharging"
+        android:textColorHighlight="@color/material_dynamic_primary100"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Battery Voltage -->
+    <TextView
+        android:id="@+id/batteryVoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltage: 3.8V"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- ProgressBar for Battery Percentage -->
+
+    <ProgressBar
+        android:id="@+id/batteryProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:max="10"
+        android:progress="100" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>
